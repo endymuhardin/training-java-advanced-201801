@@ -25,7 +25,7 @@ public class InheritanceDemo {
         p3.setNama("Produk 003");
         p3.setHarga(new BigDecimal(300000));
 
-        Transaksi normal = new Transaksi();
+        Transaksi normal = new PromoPremiumMember();
         TransaksiDetail td1 = new TransaksiDetail();
         td1.setJumlah(2);
         td1.setProduk(p1);
