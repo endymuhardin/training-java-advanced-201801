@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data
 public class TransaksiDetail {
-    private Transaksi transaksi;
     private Produk produk;
     private Integer jumlah;
 

@@ -2,8 +2,6 @@ package com.muhardin.endy.training.javafundamental201801.objectstructure.inherit
 
 import java.math.BigDecimal;
 
-import com.muhardin.endy.training.javafundamental201801.objectstructure.Transaksi;
-
 import lombok.Data;
 
 @Data

@@ -1,12 +1,11 @@
-package com.muhardin.endy.training.javafundamental201801.objectstructure.inheritance;
+package com.muhardin.endy.training.javafundamental201801.objectstructure.composition;
 
 import java.math.BigDecimal;
 
 import com.muhardin.endy.training.javafundamental201801.objectstructure.Produk;
-
 import com.muhardin.endy.training.javafundamental201801.objectstructure.TransaksiDetail;
 
-public class InheritanceDemo {
+public class CompositionDemo {
     public static void main(String[] args) {
         // Data awal
         Produk p1 = new Produk();
@@ -24,21 +23,24 @@ public class InheritanceDemo {
         p3.setNama("Produk 003");
         p3.setHarga(new BigDecimal(300000));
 
-        Transaksi normal = new PromoPremiumMember();
+        Transaksi normal = new Transaksi();
         TransaksiDetail td1 = new TransaksiDetail();
         td1.setJumlah(2);
         td1.setProduk(p1);
-
         normal.getDaftarBelanja().add(td1);
-        System.out.println("Total transaksi normal : "+normal.total());
+        System.out.println("Total transaksi normal : "+normal.tagihan());
 
-        PromoHariRaya lebaran = new PromoHariRaya();
-        lebaran.setNamaHariRaya("Lebaran");
+        Transaksi diskon = new Transaksi();
         TransaksiDetail td2 = new TransaksiDetail();
         td2.setJumlah(2);
         td2.setProduk(p1);
+        diskon.getDaftarBelanja().add(td2);
+        
+        Diskon lebaran = new DiskonHariRaya();
+        lebaran.setNamaHariRaya("Lebaran");
+        diskon.getDaftarDiskon().add(lebaran);
+        
+        System.out.println("Total transaksi diskon : "+diskon.tagihan());
 
-        lebaran.getDaftarBelanja().add(td2);
-        System.out.println("Total transaksi lebaran : "+lebaran.total());
     }
 }
