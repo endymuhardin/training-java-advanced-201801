@@ -1,6 +1,8 @@
 .DS_Store
+*.swp
 .settings
 .vscode
 .classpath
 .project
+.factorypath
 target
