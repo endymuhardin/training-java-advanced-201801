@@ -36,8 +36,7 @@ public class CompositionDemo {
         td2.setProduk(p1);
         diskon.getDaftarBelanja().add(td2);
         
-        Diskon lebaran = new DiskonHariRaya();
-        lebaran.setNamaHariRaya("Lebaran");
+        Diskon lebaran = new DiskonHariRaya("Lebaran");
         diskon.getDaftarDiskon().add(lebaran);
         
         System.out.println("Total transaksi diskon : "+diskon.tagihan());

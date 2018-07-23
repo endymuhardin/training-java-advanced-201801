@@ -2,9 +2,11 @@ package com.muhardin.endy.training.javafundamental201801.objectstructure.composi
 
 import java.math.BigDecimal;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data
+@Data @NoArgsConstructor @AllArgsConstructor
 public class DiskonHariRaya extends Diskon {
 
     private String namaHariRaya;
