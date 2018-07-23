@@ -27,6 +27,14 @@ public class ObjectInstantiationDemo {
         // 100 baris selanjutnya, variabel e masih hidup
         // variabel p dan x sudah dimakan GC
     }
+
+    public static void main(String[] args) {
+        Product p = new Product();
+        p.setCode("P-001");
+        p.setName("Product 001");
+
+        System.out.println(p);
+    }
 }
 
 @Setter @Getter
