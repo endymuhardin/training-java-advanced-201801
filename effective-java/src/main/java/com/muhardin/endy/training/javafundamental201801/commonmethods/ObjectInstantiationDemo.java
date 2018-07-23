@@ -1,4 +1,4 @@
-package com.muhardin.endy.training.javafundamental201801;
+package com.muhardin.endy.training.javafundamental201801.commonmethods;
 
 import java.io.BufferedReader;
 import java.io.StringReader;
