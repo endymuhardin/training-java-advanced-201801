@@ -35,9 +35,17 @@ public class CompositionDemo {
         td2.setJumlah(2);
         td2.setProduk(p1);
         diskon.getDaftarBelanja().add(td2);
+        diskon.getDaftarBelanja().add(new TransaksiDetail(){
+            @Override 
+            public BigDecimal subtotal(){
+                return BigDecimal.ZERO;
+            }
+        });
         
         Diskon lebaran = new DiskonHariRaya("Lebaran");
         diskon.getDaftarDiskon().add(lebaran);
+
+        
         
         System.out.println("Total transaksi diskon : "+diskon.tagihan());
 
