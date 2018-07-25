@@ -17,7 +17,7 @@ public class PajakTransaksiOnline implements Pajak {
     // ada method yang tidak relevan, tapi terpaksa dibuat
     // karena ada di interface Pajak
 	public BigDecimal pajakPembeli(String pembeli) {
-		throws new UnsupportedOperationException("transaksi online tidak ada pajak pembeli");
+		throw new UnsupportedOperationException("transaksi online tidak ada pajak pembeli");
 	}
 
 }
