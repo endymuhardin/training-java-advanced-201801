@@ -2,6 +2,7 @@
 *.swp
 .settings
 .vscode
+.vs
 .classpath
 .project
 .factorypath
