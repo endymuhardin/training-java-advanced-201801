@@ -22,4 +22,8 @@ public class Pelanggan {
 
     @NotEmpty @Email
     private String email;
+    
+    @NotEmpty
+    private String noHp;
+
 }
