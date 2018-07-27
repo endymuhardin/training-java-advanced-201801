@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service @Transactional
-@Profile("1.0.1") // SPRING_PROFILES_ACTIVE=1.0.1 mvn clean spring-boot:run
+@Profile("1.1.0") // SPRING_PROFILES_ACTIVE=1.1.0 mvn clean spring-boot:run
 public class SampleDataService {
 
     @Autowired private PelangganDao pelangganDao;

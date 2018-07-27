@@ -5,7 +5,7 @@
 
 	<groupId>com.muhardin.endy.training.refactoring.database</groupId>
 	<artifactId>refactoring-database</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${app.version}</version>
 	<packaging>jar</packaging>
 
 	<name>refactoring-database</name>
@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<app.version>1.1.0-RELEASE</app.version>
 	</properties>
 
 	<dependencies>
