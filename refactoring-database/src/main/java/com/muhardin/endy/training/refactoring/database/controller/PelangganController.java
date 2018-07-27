@@ -27,7 +27,7 @@ public class PelangganController {
 
     @PostMapping("/")
     public void simpan(@RequestBody @Valid Pelanggan p){
-        PemisahNama.pisahNama(p);
+        PemisahNama.pisahNama(p); // kalau mau live sebelum kolom nama dihapus
         pelangganDao.save(p);
     }
 }
