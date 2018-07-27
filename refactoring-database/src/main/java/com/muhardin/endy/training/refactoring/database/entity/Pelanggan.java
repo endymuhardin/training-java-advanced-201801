@@ -20,6 +20,10 @@ public class Pelanggan {
     @NotEmpty
     private String nama;
 
+    private String namaDepan;
+    
+    private String namaBelakang;
+
     @NotEmpty @Email
     private String email;
     
