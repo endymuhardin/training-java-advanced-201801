@@ -28,7 +28,9 @@ public class SampleDataService {
             for (int i = 0; i < jumlahData; i++) {
                 Faker faker = new Faker();
                 Pelanggan p = new Pelanggan();
-                p.setNama(faker.name().fullName());
+                // p.setNama(faker.name().fullName()); // field nama dihapus
+                p.setNamaDepan(faker.name().firstName());
+                p.setNamaBelakang(faker.name().lastName());
                 p.setEmail(faker.name().username() + "@" + faker.internet().domainName());
                 p.setNoHp(faker.phoneNumber().cellPhone());
                 pelangganDao.save(p);

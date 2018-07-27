@@ -24,7 +24,7 @@ public class SplitNamaPelanggan {
         String gitTag = git.get("closest.tag.name");
         if (gitTag != null && gitTag.startsWith(APPLICABLE_TAG)) {
             pelangganDao.findAll().forEach(p -> {
-                PemisahNama.pisahNama(p);
+                //PemisahNama.pisahNama(p); // seharusnya hapus saja seluruh class
                 pelangganDao.save(p);
             });
         }

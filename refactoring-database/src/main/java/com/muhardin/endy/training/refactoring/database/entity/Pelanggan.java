@@ -18,10 +18,9 @@ public class Pelanggan {
     private String id;
 
     @NotEmpty
-    private String nama;
-
     private String namaDepan;
-    
+
+    @NotEmpty
     private String namaBelakang;
 
     @NotEmpty @Email
