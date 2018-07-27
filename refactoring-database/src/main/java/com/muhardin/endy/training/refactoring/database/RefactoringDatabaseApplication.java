@@ -1,4 +1,4 @@
-package com.muhardin.endy.training.refactoring.database.refactoringdatabase;
+package com.muhardin.endy.training.refactoring.database;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
